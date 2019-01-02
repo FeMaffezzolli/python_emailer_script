@@ -41,5 +41,5 @@ for email in email_list:
     msg['To'] = email
     s.sendmail(msg['From'], [msg['To']], msg.as_string())
 
-server.quit()
+s.quit()
 print ("successfully sent all emails from %s:" % (msg['From']))
